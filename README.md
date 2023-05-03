@@ -1,5 +1,5 @@
 ﻿
-## Vagrant - Provisionando Minikube (kubernetes local) para estudos e testes
+## Vagrant - Provisionando Minikube (Kubernetes local) para estudos e testes
 
 Será criado de forma rápida e objetiva uma VM com minikube pronto para uso, para ser usado durante o desenvolvimento e testes.
 
@@ -62,9 +62,9 @@ https://github.com/tiagotsc/vagrant-basico_vms
 
 ![App Screenshot](images/img4.png)
 
-E coloque o seguinte conteúdo
+E coloque o seguinte conteúdo:
 
-https://github.com/tiagotsc/vagrant-basico_vms/blob/07adecac66da064c547c1987fcdafa507902cfca/Vagrantfile#L1-L62
+https://github.com/tiagotsc/vagrant-minikube/blob/948079cecfa86fa6db65e72b2cc1b4a8ae9a2567/script.sh#L1-L26
 
 Depois de inserir o conteúdo, salve o arquivo.
 
