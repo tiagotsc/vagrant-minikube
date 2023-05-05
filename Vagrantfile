@@ -2,7 +2,7 @@
 # vi: set ft=ruby  :
 
 machines = {
-  "minikube2"   => {"memory" => "12288", "cpu" => "6", "ip" => "150", "image" => "centos/7"}
+  "minikube"   => {"memory" => "6144", "cpu" => "4", "ip" => "150", "image" => "centos/7"}
 }
 
 Vagrant.configure("2") do |config|
@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
 	  sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 	  systemctl restart sshd
 	  SHELL
-	  config.vm.provision "shell", path: "script.sh"
     end
   end
+  config.vm.provision "shell", path: "script.sh"
 end
