@@ -20,15 +20,15 @@ Vagrant.configure("2") do |config|
         vb.memory = conf["memory"]
         vb.cpus = conf["cpu"]
       end
- 	  machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}"
-	  config.vm.provision "shell", inline: <<-SHELL
-	  HOSTS=$(head -n7 /etc/hosts)
-	  echo -e "$HOSTS" > /etc/hosts
-	  echo '192.168.0.#{conf["ip"]} #{name}' >> /etc/hosts
-	  # Habilita acesso SSH remoto
-	  sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
-	  systemctl restart sshd
-	  SHELL
+      machine.vm.provision "shell", inline: "hostnamectl set-hostname #{name}"
+      config.vm.provision "shell", inline: <<-SHELL
+      HOSTS=$(head -n7 /etc/hosts)
+      echo -e "$HOSTS" > /etc/hosts
+      echo '192.168.0.#{conf["ip"]} #{name}' >> /etc/hosts
+      # Habilita acesso SSH remoto
+      sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
+      systemctl restart sshd
+      SHELL
     end
   end
   config.vm.provision "shell", path: "script.sh"
