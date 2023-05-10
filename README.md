@@ -1,7 +1,7 @@
 ﻿
 ## Vagrant - Provisionando Minikube (Kubernetes local) para estudos e testes
 
-Será criado de forma rápida e objetiva uma VM com minikube pronto para uso, para ser usado durante o desenvolvimento e testes.
+Será criado de forma rápida e objetiva uma VM com Minikube pronto para uso, para ser usado durante o desenvolvimento e testes.
 
 No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte identificação:
 
@@ -54,7 +54,7 @@ Ainda dentro do **Vagrantfile**, criaremos um apontamento para o arquivo **scrip
 
 Conteúdo completo arquivo Vagrantfile
 
-https://github.com/tiagotsc/vagrant-minikube/blob/948079cecfa86fa6db65e72b2cc1b4a8ae9a2567/script.sh#L1-L61
+https://github.com/tiagotsc/vagrant-minikube/blob/dad0f0990808d7711e0f0c9ea7996f1de4c22123/Vagrantfile#L1-L61
 
 Depois de tudo configurado, salve o arquivo.
 

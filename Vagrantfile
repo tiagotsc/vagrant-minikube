@@ -31,11 +31,11 @@ Vagrant.configure("2") do |config|
       machine.vm.hostname = "#{name}"
 	  # Crie uma rede privada, que permite acesso somente de host à máquina
       # usando um IP específico.
-      machine.vm.network "public_network", ip: "192.168.0.#{conf["ip"]}"
+      machine.vm.network "private_network", ip: "192.168.56.#{conf["ip"]}"
       # Crie uma rede pública, que geralmente corresponda à rede em ponte.
       # As redes em ponte fazem com que a máquina apareça como outro dispositivo físico na
       # sua rede.
-      # machine.vm.network:public_network
+      # machine.vm.network "public_network", ip: "192.168.0.#{conf["ip"]}"
       machine.vm.provider "virtualbox" do |vb|
 	    # Nome VM
         vb.name = "#{name}"
