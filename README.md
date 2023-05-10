@@ -19,6 +19,11 @@ Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará di
 
 Minikube só é recomendado para testes e estudos sobre Kubernetes.
 
+Vagrant só é recomendado para ambientes de testes e desenvolvimento, conforme pode ser visto no link abaixo.
+
+https://developer.hashicorp.com/vagrant/intro/vs/terraform
+
+
 ### Requisitos mínimos
 
 Ter em seu SO os seguintes softwares.
