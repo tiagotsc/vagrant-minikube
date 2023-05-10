@@ -13,7 +13,7 @@ No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte iden
 
 Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará disponível dentro do diretório da VM em:
 
-/home/vagrant/projeto
+**/home/vagrant/projeto**
 
 ### Observação
 
