@@ -3,7 +3,7 @@
 
 Será criado de forma rápida e objetiva uma VM com minikube pronto para uso, para ser usado durante o desenvolvimento e testes.
 
-No exemplo a seguir serão criados uma VM no VirtualBox, que terá a seguinte identificação:
+No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte identificação:
 
 | Hostname   | IP       |
 | :---------- | :--------- |
@@ -26,9 +26,11 @@ Abaixo de cada um segue o link para download.
 
   https://developer.hashicorp.com/vagrant/downloads
 
-- Putty (Software de cliente remoto)
+- Putty ou MobaXterm (Software de cliente remoto)
 
   https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+  https://mobaxterm.mobatek.net/download-home-edition.html
 
 ### Siga as etapas
 
@@ -36,7 +38,7 @@ Abaixo de cada um segue o link para download.
 
 ![App Screenshot](images/img1.png)
 
-2 - Nosso arquivo **Vagrantfile** terá algumas configurações pontuais para nossa única VM.
+2 - O arquivo **Vagrantfile** terá algumas configurações pontuais para nossa única VM.
 
 - **SO:** CentOS 7
 - **Hostname:** minikube
@@ -46,19 +48,17 @@ Abaixo de cada um segue o link para download.
 
 ![App Screenshot](images/img2.png)
 
-Ainda dentro do **Vagrantfile**, criaremos um apontamento para o arquivo **script.sh**, que será nosso script externo.
-
-Esse arquivo terá todos os passos de preparação do Minikube na VM.
+Ainda dentro do **Vagrantfile**, criaremos um apontamento para o arquivo **script.sh**, que será nosso script externo com toda a instalação do Minikube.
 
 ![App Screenshot](images/img3.png)
 
+Conteúdo completo arquivo Vagrantfile
+
+https://github.com/tiagotsc/vagrant-minikube/blob/948079cecfa86fa6db65e72b2cc1b4a8ae9a2567/script.sh#L1-L61
+
 Depois de tudo configurado, salve o arquivo.
 
-Detalhes de como configurar o arquivo **Vagrantfile**, acesse o link.
-
-https://github.com/tiagotsc/vagrant-basico_vms
-
-3 - Agora dentro da pasta **projeto**, crio o arquivo **script.sh** de fato.
+3 - Agora dentro da pasta **projeto**, crie o arquivo **script.sh** .
 
 ![App Screenshot](images/img4.png)
 
@@ -100,22 +100,28 @@ kubectl version
 
 ![App Screenshot](images/img7.png)
 
-O mesmo pode ser feito nas outras VMs, caso queira acessá-las.
-
 ### Alguns comandos úteis
 
 Via linha de comando, é preciso estar na pasta "**projeto**", pasta aonde está o Vagrantfile,  para executar os comando.
 
 ```bash
-# Desliga VM
+# Liga VM, ou cria, caso ainda não exista
 vagrant up
 
-# Reiniciar VM
+# Desliga a VM
+vagrant halt
+
+# Reiniciar a VM
 vagrant reload
 
-# Destruir VM
+# Destrói a VM, mas pergunta antes
 vagrant destroy
+
+# Destrói a VM sem perguntar
+vagrant destroy -f
 ```
+
+Tudo o tutorial aplicado já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
 
 #### Documentação oficial do Vagrant
 
