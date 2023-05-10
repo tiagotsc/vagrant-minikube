@@ -1,13 +1,19 @@
 ﻿
 ## Vagrant - Provisionando Minikube (Kubernetes local) para estudos e testes
 
-Será criado de forma rápida e objetiva uma VM com Minikube pronto para uso, para ser usado durante o desenvolvimento e testes.
+Criar de forma rápida e objetiva uma VM com Minikube pronto para uso, para ser usada durante o desenvolvimento e testes, rodando no CentOS 7.
+
+Inclusive já será feito uma mapeamento entre a pasta host e vm.
 
 No exemplo a seguir será criado uma VM no VirtualBox, que terá a seguinte identificação:
 
 | Hostname   | IP       |
 | :---------- | :--------- |
 | minikube | 192.168.56.150 |
+
+Tudo que for implementado ou criado na pasta raiz desse tutorial, já ficará disponível dentro do diretório da VM em:
+
+/home/vagrant/projeto
 
 ### Observação
 
@@ -31,6 +37,10 @@ Abaixo de cada um segue o link para download.
   https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
   https://mobaxterm.mobatek.net/download-home-edition.html
+
+- Vagrant - plugin vbguest, via linha de comando, execute:
+
+  vagrant plugin install vagrant-vbguest
 
 ### Siga as etapas
 
