@@ -120,7 +120,7 @@ kubectl version
 
 ### Alguns comandos úteis
 
-Via linha de comando, é preciso estar na pasta "**projeto**", pasta aonde está o Vagrantfile,  para executar os comando.
+Via linha de comando, é preciso estar na pasta "**projeto**", pasta onde está o **Vagrantfile**,  para executar os comandos:
 
 ```bash
 # Liga VM, ou cria, caso ainda não exista
