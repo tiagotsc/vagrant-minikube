@@ -139,7 +139,7 @@ vagrant destroy
 vagrant destroy -f
 ```
 
-Tudo o tutorial aplicado já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
+Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
 
 #### Documentação oficial do Vagrant
 
