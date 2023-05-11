@@ -23,6 +23,9 @@ Vagrant só é recomendado para ambientes de testes e desenvolvimento, conforme 
 
 https://developer.hashicorp.com/vagrant/intro/vs/terraform
 
+### Versões de softwares utilizados nesse tutorial
+
+SO Windows 11, Vagrant 2.3.3 e VirtualBox 7.0.6
 
 ### Requisitos mínimos
 
