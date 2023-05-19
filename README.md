@@ -123,6 +123,8 @@ kubectl version
 Via linha de comando, é preciso estar na pasta "**projeto**", pasta onde está o **Vagrantfile**,  para executar os comandos:
 
 ```bash
+##### VAGRANT - é preciso estar na pasta que contém o Vagrantfile #####
+
 # Liga VM, ou cria, caso ainda não exista
 vagrant up
 
@@ -137,6 +139,20 @@ vagrant destroy
 
 # Destrói a VM sem perguntar
 vagrant destroy -f
+
+##### MINIKUBE #####
+
+# Crie um cluster, com 3 nós, por exemplo
+minikube start --nodes 3 --driver='docker'
+
+# Para o cluster
+minikube stop
+
+# Lista os pods com mais detalhe
+kubectl get pods -o wide
+
+# Lista nós do cluster com mais detalhe
+kubectl get nodes -o wide
 ```
 
 Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
