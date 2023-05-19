@@ -155,7 +155,7 @@ kubectl get pods -o wide
 kubectl get nodes -o wide
 ```
 
-Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, basta clonar e subir o ambiente.
+Todo o tutorial aplicado aqui, já se encontra pronto para uso nesse repositório, se você tiver em seu SO o **Vagrant** e **VirtualBox**, basta clonar e subir o ambiente.
 
 #### Documentação oficial do Vagrant
 
