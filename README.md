@@ -1,7 +1,7 @@
 ﻿
 ## Vagrant - Provisionando Minikube (Kubernetes local) para estudos e testes
 
-Criar de forma rápida e objetiva uma VM com Minikube pronto para uso, para ser usada durante o desenvolvimento e testes, rodando no CentOS 7.
+Passo a passo de como criar uma VM com Minikube pronta para uso, para ser usada durante o desenvolvimento e testes do Kubernetes, rodando no CentOS 7.
 
 Inclusive já será feito uma mapeamento entre a pasta host e vm.
 
